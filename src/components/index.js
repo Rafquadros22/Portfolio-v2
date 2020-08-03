@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/styles";
-
+import Footer from "./Footer";
 const useStyles = makeStyles({
   particlesCanva: {
     position: "absolute",
-    opacity:"0.6"
+    opacity: "0.6",
   },
 });
 const Home = () => {
@@ -62,6 +62,8 @@ const Home = () => {
           },
         }}
       />
+
+      <Footer />
     </div>
   );
 };

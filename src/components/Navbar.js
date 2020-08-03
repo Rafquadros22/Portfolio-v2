@@ -24,7 +24,7 @@ import {
   ContactMail,
 } from "@material-ui/icons";
 
-import avatar from "../avatar.png";
+import avatar from "../facebookphoto2.jpg";
 
 //Css Styles
 
@@ -51,18 +51,20 @@ const menuItems = [
     listText: "Home",
     listPath:"/"
   },
-  {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
-    listPath:"/resume"
-  },
+  // {
+  //   listIcon: <AssignmentInd />,
+  //   listText: "Resume",
+  //   listPath:"/resume"
+  // },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath:"/Portfolio"
   },
   {
     listIcon: <ContactMail />,
     listText: "Contact",
+    listPath:"/Contacts"
   },
 ];
 
