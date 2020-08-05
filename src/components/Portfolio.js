@@ -13,6 +13,8 @@ import {
   CardContent,
 } from "@material-ui/core";
 
+import Pdf from '../images/2020 Rafael Quadros_ Resume.pdf';
+
 import Footer from "./Footer";
 
 import project1 from "../images/html-css-javascript.jpg";
@@ -30,7 +32,7 @@ const useStyles = makeStyles({
   },
   cardContainer: {
     maxWidth: 345,
-    margin: "3rem",
+
     margin: "5rem auto",
   },
   // resumeContainer: {
@@ -49,7 +51,7 @@ const Portfolio = () => {
         component="header"
         className={classes.resumeContainer}
         justifyContent="center"
-        backgroundColor={"transparent"}
+        backgroundcolor={"transparent"}
       ></Box>
       <Grid container justify="center">
         {/* Project 1 */}
@@ -74,15 +76,15 @@ const Portfolio = () => {
                   specimen book.
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
             </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Share
+              </Button>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
         {/* Project 1 */}
@@ -107,15 +109,15 @@ const Portfolio = () => {
                   specimen book.
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
             </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Share
+              </Button>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
 
@@ -141,15 +143,15 @@ const Portfolio = () => {
                   specimen book.
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
             </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Share
+              </Button>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
 
@@ -175,15 +177,15 @@ const Portfolio = () => {
                   specimen book.
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
             </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Share
+              </Button>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
 
@@ -196,7 +198,6 @@ const Portfolio = () => {
                 alt="Resume"
                 height="140"
                 image={project4}
-                s
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
@@ -213,15 +214,15 @@ const Portfolio = () => {
                   visions and strategies into actionable, value-added goals.
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Resume
-                </Button>
-              </CardActions>
             </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Share
+              </Button>
+              <Button size="small" color="primary">
+              <a href = {Pdf} target = "_blank">Download Pdf</a>
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
       </Grid>

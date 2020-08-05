@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
+import NavFooter from "./NavFooter";
 import {
   AppBar,
   Toolbar,
@@ -16,13 +17,7 @@ import {
   Box,
 } from "@material-ui/core";
 
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-} from "@material-ui/icons";
+import { ArrowBack, Home, Apps, ContactMail } from "@material-ui/icons";
 
 import avatar from "../facebookphoto2.jpg";
 
@@ -49,22 +44,18 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
-    listPath:"/"
+    listPath: "/",
   },
-  // {
-  //   listIcon: <AssignmentInd />,
-  //   listText: "Resume",
-  //   listPath:"/resume"
-  // },
+
   {
     listIcon: <Apps />,
     listText: "Portfolio",
-    listPath:"/Portfolio"
+    listPath: "/Portfolio",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contact",
-    listPath:"/Contacts"
+    listPath: "/Contacts",
   },
 ];
 
@@ -78,9 +69,12 @@ const Navbar = () => {
 
   const classes = useStyles();
 
-  const sideList = slider => (
-    <Box className={classes.menuSliderContainer} component="div"
-    onClick={toggleSlider(slider,false)}>
+  const sideList = (slider) => (
+    <Box
+      className={classes.menuSliderContainer}
+      component="div"
+      onClick={toggleSlider(slider, false)}
+    >
       <Avatar className={classes.avatar} src={avatar} atl="Rafael Quadros" />
       <Divider />
       <List>
@@ -116,6 +110,7 @@ const Navbar = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <NavFooter />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
